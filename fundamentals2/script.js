@@ -3,7 +3,7 @@
 'use strict';
 
 //functions are lines of code that we can reuse on different parts of code.
-function fruitProcessor (apples, oranges){
+/**function fruitProcessor (apples, oranges){
     const applePieces = cutFruitPieces(apples);
     const orangePieces = cutFruitPieces(oranges);
     console.log(apples, oranges)
@@ -55,7 +55,7 @@ friends.indexOf('Steven')
 //includes returns true if it finds a match inside the array
 friends.includes('Steven')
 
-
+**/
 
 //TODO: OBJECTS
 const jonasObject = {
@@ -71,10 +71,17 @@ const jonasObject = {
 console.log(jonasObject)
 
 //dot notation, to reference a property inside the object, when we have the clear notation of the property inside the object we should use this
-console.log(jonas.lastName)
+console.log(jonasObject.lastName)
 //bracket notation is the same, we can place any notation that we want
-console.log(jonas['lastName'])
+console.log(jonasObject['lastName'])
 
 const interstedIn = prompt('What do you want to know about Jonas? Choos between name, lastName, age, job, firneds')
-console.log(jonas[interstedIn])
+console.log(jonasObject[interstedIn])
 
+//use both dot and bracket to add properties
+
+jonasObject.location = 'Portugal';
+jonasObject ['Twitter']= '@jonasBrother1999'
+
+//challenge
+console.log(`Jonas has ${jonasObject.friends.length} and his best friend is ${jonasObject.friends[0]}`)
