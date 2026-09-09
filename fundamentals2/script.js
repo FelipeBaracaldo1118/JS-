@@ -55,7 +55,7 @@ friends.indexOf('Steven')
 //includes returns true if it finds a match inside the array
 friends.includes('Steven')
 
-**/
+
 
 //TODO: OBJECTS
 const jonasObject = {
@@ -85,3 +85,21 @@ jonasObject ['Twitter']= '@jonasBrother1999'
 
 //challenge
 console.log(`Jonas has ${jonasObject.friends.length} and his best friend is ${jonasObject.friends[0]}`)
+**/
+
+//Object Methods
+const felipe = {
+    firstName :'Felipe',
+    lastName : 'Baracaldo',
+    birthYeah: 1999,
+    job: 'Software Developer',
+    friends: ['Santi', 'Mateo', 'Calvo'],
+    hasDriversLicence: true,
+        // we can pass even fucntions in it actually.
+    calcAge: function(){
+        return 2027 - this.birthYeah;
+    }
+}
+//this will make to reduce error of using wrong data inside and outside the object 
+//this keyword. basically is used to locate any property that is placed on the object to demonstrate were it is located
+console.log(felipe.calcAge())
