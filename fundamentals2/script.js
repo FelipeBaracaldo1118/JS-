@@ -103,3 +103,5 @@ const felipe = {
 //this will make to reduce error of using wrong data inside and outside the object 
 //this keyword. basically is used to locate any property that is placed on the object to demonstrate were it is located
 console.log(felipe.calcAge())
+
+//what if I need to access to a property multiple times in the program?
