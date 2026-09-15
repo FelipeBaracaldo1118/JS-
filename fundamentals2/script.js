@@ -88,6 +88,8 @@ console.log(`Jonas has ${jonasObject.friends.length} and his best friend is ${jo
 **/
 
 //Object Methods
+
+/** 
 const felipe = {
     firstName :'Felipe',
     lastName : 'Baracaldo',
@@ -100,8 +102,34 @@ const felipe = {
         return 2027 - this.birthYeah;
     }
 }
+    **/
 //this will make to reduce error of using wrong data inside and outside the object 
 //this keyword. basically is used to locate any property that is placed on the object to demonstrate were it is located
 console.log(felipe.calcAge())
 
-//what if I need to access to a property multiple times in the program?
+//for statement 
+for(let rep= 1  ; rep <= 10 ; rep++){
+    console.log(`Lifting weights repetition ${rep}`)
+}
+
+//looping arrays, breaking and continuing
+
+const jonasArray= [
+    'Jonas',
+    'Schemedtmann',
+    2027-1995,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+]
+
+for (let i = 0; i <= jonasArray.length ; i++){
+    console.log(jonas[i])
+}
+
+//we can pause and continue any loop according to a condition. 
+for (let i = 0; i <= jonasArray.length; i++){
+    //here it comes de condition for it 
+    if(typeof jonas[i] !=='string ') continue;
+    //what this means is that if the type of the properties inside the array are differente than a string, this will skip them and just count the ones that fullflls the condition 
+    console.log(jonas[i], typeof jonas[i])
+}
